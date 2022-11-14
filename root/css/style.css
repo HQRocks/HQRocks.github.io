@@ -1,0 +1,121 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #900;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+}
+
+.button-group {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 21.5vw;
+}
+
+.button-group button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 4vh;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.3vw;
+    background-color: #900;
+    width: 11.5vw;
+    height: 15vh;
+    margin-top: 2vw;
+    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+}
+
+.button-group button:hover {
+    background-color: rgb(113, 0, 0);
+    cursor: pointer;
+    font-size: 1.2vw;
+}
+
+#rolunk {
+    margin-top: 0;
+}
+
+.button-group2 {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 17.3vw;
+}
+
+.button-group2 button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 4vh;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.3vw;
+    background-color: #900;
+    width: 11.5vw;
+    height: 15vh;
+    margin-top: 2vw;
+    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+}
+
+.button-group2 button:hover {
+    background-color: rgb(113, 0, 0);
+    cursor: pointer;
+    font-size: 1.2vw;
+}
+
+#tud {
+    margin-top: 0;
+}
+
+img {
+    width: 25vw;
+    height: 62.5vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+footer {
+    width: 100%;
+    height: 15vh;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
