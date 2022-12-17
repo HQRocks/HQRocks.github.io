@@ -50,8 +50,13 @@ main {
     background-color: #900;
     width: 11.5vw;
     height: 15vh;
-    margin-top: 2vw;
+    margin-top: 5vh;
     box-shadow: inset 0 0 10px rgb(0, 0, 0);
+}
+
+.button-group a{
+    width: fit-content;
+    height: fit-content;
 }
 
 .button-group button:hover {
@@ -87,6 +92,11 @@ main {
     height: 15vh;
     margin-top: 2vw;
     box-shadow: inset 0 0 10px rgb(0, 0, 0);
+}
+
+.button-group2 a{
+    width: fit-content;
+    height: fit-content;
 }
 
 .button-group2 button:hover {

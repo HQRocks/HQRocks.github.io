@@ -132,18 +132,21 @@ section article {
 }
 
 section article h1 {
-    font-size: 1.3vw;
+    font-size: 2vw;
     text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    margin-left: 3.2vw;
 }
 
-section article p {
+section article ol {
     font-size: 1.2vw;
-    text-align: justify;
 }
 
 #line {
     width: 53.4vw;
     height: auto;
+    justify-self: center;
 }
 
 aside {

@@ -146,6 +146,10 @@ section article p {
     height: auto;
 }
 
+.a {
+    text-align: center;
+}
+
 aside {
     background-color: rgb(211, 211, 211);
     width: 18vw;

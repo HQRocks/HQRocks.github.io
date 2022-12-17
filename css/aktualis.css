@@ -18,6 +18,7 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 #indexbut {
     width: 10vw;
     height: 20vh;
@@ -139,11 +140,6 @@ section article h1 {
 section article p {
     font-size: 1.2vw;
     text-align: justify;
-}
-
-#line {
-    width: 53.4vw;
-    height: auto;
 }
 
 aside {
