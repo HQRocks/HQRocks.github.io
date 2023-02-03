@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Főoldal - MILENART</title>
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>milenart</h1>
+        <nav>
+            <a href=""><button>Főoldal</button></a>
+            <button>Galéria</button>
+            <button>Rólam</button>
+            <button>Kapcsolat</button>
+        </nav>
+    </header>
+    <main>
+        <script>
+            var i = 0;
+            var images = [];
+            var time = 6000;
+
+            images[0] = "images/image1.png";
+            images[1] = "images/image2.png";
+            images[2] = "images/image3.png";
+            images[3] = "images/image4.png";
+
+            function changeImg() {
+                document.slide.src = images[i];
+
+                if (i < images.length - 1) {
+                    i++;
+                } else {
+                    i = 0;
+                }
+
+                setTimeout("changeImg()", time);
+            }
+
+            window.onload = changeImg;
+        </script>
+        <img name="slide" id="slideshowimg">
+    </main>
+</body>
+
+</html>
