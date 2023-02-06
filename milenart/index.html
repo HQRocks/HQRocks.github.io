@@ -8,9 +8,14 @@
     <title>Főoldal - MILENART</title>
     <link rel="shortcut icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,31 +29,15 @@
         </nav>
     </header>
     <main>
-        <script>
-            var i = 0;
-            var images = [];
-            var time = 6000;
-
-            images[0] = "images/image1.png";
-            images[1] = "images/image2.png";
-            images[2] = "images/image3.png";
-            images[3] = "images/image4.png";
-
-            function changeImg() {
-                document.slide.src = images[i];
-
-                if (i < images.length - 1) {
-                    i++;
-                } else {
-                    i = 0;
-                }
-
-                setTimeout("changeImg()", time);
-            }
-
-            window.onload = changeImg;
-        </script>
-        <img name="slide" id="slideshowimg">
+        <div>
+            <h1>MILENART</h1>
+            <p>Modern egyedi festmények</p>
+            <p class="idezet">
+                Az alkotásaim a természet által ihletett saját képzeletem megjelenítései, <br>
+                amelyek a színek és anyagok segítségével kelnek életre.
+            </p>
+        </div>
+        <button>Galéria</button>
     </main>
 </body>
 

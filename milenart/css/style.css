@@ -16,23 +16,24 @@ header {
     max-height: 10%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    box-shadow: 0px -2px 20px -4px rgb(0, 0, 0);
 }
 
 header h1 {
-    width: 30%;
+    width: 15%;
     text-align: center;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Merienda', cursive;
     text-transform: uppercase;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    margin-left: 10%;
 }
 
 header nav {
-    width: 50%;
+    width: 40%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-right: 10%;
 }
 
 header nav button {
@@ -54,14 +55,66 @@ header nav button:active {
 }
 
 main {
+    background-image: url('../images/bg.png');
+    background-size: cover;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    max-height: 90%;
+    height: 90%;
     justify-content: center;
     align-items: center;
 }
 
-#slideshowimg {
-    width: 95%;
-    max-height: 90%;
+main div {
+    width: 80%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+main div h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Merienda', cursive;
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+main div p {
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.idezet {
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: none;
+    font-family: 'Merienda', cursive;
+    margin: 0;
+}
+
+main button {
+    width: 25%;
+    height: 10%;
+    border: none;
+    background: rgb(35, 35, 35);
+    opacity: 90%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1.5rem;
+}
+
+main button:hover {
+    opacity: 100%;
+    cursor: pointer;
 }
