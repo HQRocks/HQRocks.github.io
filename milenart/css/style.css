@@ -49,7 +49,7 @@ header nav a {
     color: black;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-size: clamp(0.7rem, 1.3vw, 4rem);
+    font-size: clamp(0.5rem, 1.2vw, 4rem);
 }
 
 header nav a:hover {
@@ -63,7 +63,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 90%;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }

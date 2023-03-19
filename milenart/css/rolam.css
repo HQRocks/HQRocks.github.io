@@ -49,7 +49,7 @@ header nav a {
     color: black;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-size: clamp(0.7rem, 1.4vw, 4rem);
+    font-size: clamp(0.5rem, 1.2vw, 4rem);
 }
 
 header nav a:hover {
@@ -58,17 +58,19 @@ header nav a:hover {
 }
 
 main {
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 3%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(64, 63, 63);
 }
 
 .pictures {
-    width: 15%;
-    border: 1px solid black;
+    width: 20%;
+    order: 1px solid black;
 }
 
 .pictures img {
@@ -76,9 +78,11 @@ main {
 }
 
 .text {
-    width: 80%;
+    width: 75%;
+    color: white;
     text-align: justify;
-    font-size: clamp(0.5rem, 1.05vw, 4rem);
-    font-family: 'Montserrat', sans-serif;
-    border: 1px solid black;
+    font-size: clamp(0.5rem, 1vw, 4rem);
+    font-family: 'Merienda', cursive;
+    line-height: 1.2;
+    user-select: none;
 }
