@@ -65,8 +65,11 @@ main {
 }
 
 .top {
+    box-sizing: border-box;
     width: 70%;
-    height: 10%;
+    height: fit-content;
+    font-size: clamp(0.5rem, 1.3vw, 10rem);
+    padding: 0 1em 0 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,10 +79,12 @@ main {
 }
 
 .top a {
-    width: 20%;
-    height: 70%;
+    width: fit-content;
+    height: fit-content;
+    padding: .6em 1em .6em 1em;
     background: rgb(35, 35, 35);
     opacity: 90%;
+    font-size: clamp(0.5rem, 1.3vw, 10rem);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +112,6 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
-    order: 1px solid black;
 }
 
 .lane img {
@@ -120,13 +124,366 @@ main {
 }
 
 .alairas {
-    width: 40%;
+    width: 60%;
+    min-height: 7%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    font-size: .8rem;
+    font-size: clamp(0.5rem, 1vw, 10rem);
     font-family: 'Montserrat', sans-serif;
     margin-top: 1rem;
     border: 1px solid black;
+}
+
+#elkelt {
+    color: gray;
+    font-size: clamp(0.5rem, 1.2vw, 10rem);
+    white-space: nowrap;
+}
+
+#alairas {
+    margin-bottom: 10vh;
+}
+
+/* TABLET PORTRAIT*/
+
+@media (hover: none) and (min-width: 599px) and (max-width: 1281px) and (orientation: portrait) {
+    header {
+        width: 100%;
+        min-height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        width: 30%;
+        font-size: 2.2rem;
+        margin-left: 0;
+    }
+
+    header nav {
+        width: 65%;
+        min-height: 100%;
+        margin-right: 3%;
+    }
+
+    header nav a {
+        width: 50%;
+        display: flex;
+        font-size: 1.4rem;
+    }
+
+    .top {
+        width: 90%;
+        min-height: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        border: 1px solid black;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .top p {
+        text-align: center;
+        margin: 0;
+    }
+
+    .top a {
+        width: fit-content;
+        height: fit-content;
+        padding: .5em;
+        background: rgb(35, 35, 35);
+        opacity: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .top a:hover {
+        opacity: 100%;
+        cursor: pointer;
+    }
+
+    #line {
+        width: 90%;
+        height: 3%;
+        margin-top: 1rem;
+    }
+
+    .lane {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        order: 1px solid black;
+    }
+
+    .lane img {
+        max-width: 40vw;
+        max-height: 40vw;
+    }
+
+    .lane img:nth-of-type(1) {
+        box-shadow: 0px 1px 6px 1px rgb(77, 77, 77);
+    }
+
+    .alairas {
+        width: 80%;
+        min-height: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.4rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 1rem;
+        border: 1px solid black;
+    }
+
+    .alairas p {
+        margin: 0;
+    }
+
+    #elkelt {
+        color: gray;
+        font-size: 1.4rem;
+    }
+}
+
+/* PHONE PORTRAIT */
+
+@media screen and (hover: none) and (max-width: 481px) and (orientation: portrait) {
+    header {
+        width: 100%;
+        min-height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        width: 30%;
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    header nav {
+        width: 65%;
+        min-height: 100%;
+        margin-right: 3%;
+    }
+
+    header nav a {
+        width: 50%;
+        display: flex;
+        font-size: 0.72rem;
+    }
+
+    .top {
+        width: 90%;
+        min-height: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 1.5rem;
+        font-size: .8rem;
+        border: 1px solid black;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .top p {
+        text-align: center;
+        margin: 0;
+    }
+
+    .top a {
+        width: fit-content;
+        height: fit-content;
+        padding: .5em;
+        background: rgb(35, 35, 35);
+        opacity: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: .8rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .top a:hover {
+        opacity: 100%;
+        cursor: pointer;
+    }
+
+    #line {
+        width: 90%;
+        height: 3%;
+        margin-top: 1rem;
+    }
+
+    .lane {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        order: 1px solid black;
+    }
+
+    .lane img {
+        max-width: 40vw;
+        max-height: 40vw;
+    }
+
+    .lane img:nth-of-type(1) {
+        box-shadow: 0px 1px 6px 1px rgb(77, 77, 77);
+    }
+
+    .alairas {
+        width: 80%;
+        min-height: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: .7rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 1rem;
+        border: 1px solid black;
+    }
+
+    .alairas p {
+        margin: 0;
+    }
+
+    #elkelt {
+        color: gray;
+        font-size: .8rem;
+    }
+}
+
+/* PHONE LANDSCAPE */
+
+@media screen and (hover: none) and (max-width: 900px) and (orientation: landscape) {
+    header {
+        width: 100%;
+        min-height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        width: 30%;
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    header nav {
+        width: 65%;
+        min-height: 100%;
+        margin-right: 3%;
+    }
+
+    header nav a {
+        width: 50%;
+        display: flex;
+        font-size: 0.72rem;
+    }
+
+    .top {
+        width: 90%;
+        min-height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 1.5rem;
+        font-size: .8rem;
+        border: 1px solid black;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .top p {
+        text-align: center;
+        margin: 0;
+    }
+
+    .top a {
+        width: fit-content;
+        height: fit-content;
+        padding: .5em;
+        background: rgb(35, 35, 35);
+        opacity: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: .8rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .top a:hover {
+        opacity: 100%;
+        cursor: pointer;
+    }
+
+    #line {
+        width: 90%;
+        height: 3%;
+        margin-top: 1rem;
+    }
+
+    .lane {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        order: 1px solid black;
+    }
+
+    .lane img {
+        max-width: 40vw;
+        max-height: 40vw;
+    }
+
+    .lane img:nth-of-type(1) {
+        box-shadow: 0px 1px 6px 1px rgb(77, 77, 77);
+    }
+
+    .alairas {
+        width: 80%;
+        min-height: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: .7rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 1rem;
+        border: 1px solid black;
+    }
+
+    .alairas p {
+        margin: 0;
+    }
+
+    #elkelt {
+        color: gray;
+        font-size: .8rem;
+    }
 }
