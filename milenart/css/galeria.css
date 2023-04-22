@@ -173,6 +173,12 @@ main {
         width: 50%;
         display: flex;
         font-size: 1.4rem;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    header nav a:active {
+        background-color: rgb(228, 228, 228);
+        cursor: none;
     }
 
     .top {
@@ -252,6 +258,7 @@ main {
 
     .alairas p {
         margin: 0;
+        padding: 0 1vw 0 1vw;
     }
 
     #elkelt {
@@ -287,6 +294,12 @@ main {
         width: 50%;
         display: flex;
         font-size: 0.72rem;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    header nav a:active {
+        background-color: rgb(228, 228, 228);
+        cursor: none;
     }
 
     .top {
@@ -366,6 +379,7 @@ main {
 
     .alairas p {
         margin: 0;
+        padding: 0 1vw 0 1vw;
     }
 
     #elkelt {
@@ -401,6 +415,12 @@ main {
         width: 50%;
         display: flex;
         font-size: 0.72rem;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    header nav a:active {
+        background-color: rgb(228, 228, 228);
+        cursor: none;
     }
 
     .top {
@@ -480,6 +500,7 @@ main {
 
     .alairas p {
         margin: 0;
+        padding: 0 1vw 0 1vw;
     }
 
     #elkelt {

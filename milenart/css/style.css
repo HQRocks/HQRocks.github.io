@@ -158,6 +158,12 @@ main a:hover {
         width: 50%;
         display: flex;
         font-size: 1.4rem;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    header nav a:active {
+        background-color: rgb(228, 228, 228);
+        cursor: none;
     }
 
     main {
@@ -257,6 +263,12 @@ main a:hover {
         width: 50%;
         display: flex;
         font-size: 0.72rem;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    header nav a:active {
+        background-color: rgb(228, 228, 228);
+        cursor: none;
     }
 
     main {
@@ -356,6 +368,12 @@ main a:hover {
         width: 50%;
         display: flex;
         font-size: 0.72rem;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    header nav a:active {
+        background-color: rgb(228, 228, 228);
+        cursor: none;
     }
 
     main {
