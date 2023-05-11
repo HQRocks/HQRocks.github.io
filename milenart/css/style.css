@@ -76,7 +76,7 @@ main div {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(37, 39, 48, 0.7);
 }
 
 main div h1 {
@@ -116,7 +116,7 @@ main a {
     height: fit-content;
     padding: .8em 1.2em .8em 1.2em;
     border: none;
-    background: rgb(35, 35, 35);
+    background: rgba(37, 39, 48);
     opacity: 90%;
     text-decoration: none;
     text-transform: uppercase;
@@ -185,7 +185,7 @@ main a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(37, 39, 48, 0.7);
     }
 
     main div h1 {
@@ -225,7 +225,7 @@ main a:hover {
         justify-content: center;
         text-align: center;
         border: none;
-        background: rgb(35, 35, 35);
+        background: rgba(37, 39, 48);
         opacity: 90%;
         text-decoration: none;
         text-transform: uppercase;
@@ -290,7 +290,6 @@ main a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        background: rgba(0, 0, 0, 0.5);
     }
 
     main div h1 {
@@ -330,7 +329,7 @@ main a:hover {
         justify-content: center;
         text-align: center;
         border: none;
-        background: rgb(35, 35, 35);
+        background: rgba(37, 39, 48);
         opacity: 90%;
         text-decoration: none;
         text-transform: uppercase;
@@ -435,7 +434,7 @@ main a:hover {
         justify-content: center;
         text-align: center;
         border: none;
-        background: rgb(35, 35, 35);
+        background: rgba(37, 39, 48);
         opacity: 90%;
         text-decoration: none;
         text-transform: uppercase;
