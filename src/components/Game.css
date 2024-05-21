@@ -32,6 +32,7 @@
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(12, 1fr);
     margin: 2.3rem 0 0 0;
+    user-select: none;
 }
 
 .field {
@@ -217,7 +218,7 @@
         border: none;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
-        border: 1.5px solid black;
+        border: 2px solid black;
     }
 
     #fields div:nth-child(2) {

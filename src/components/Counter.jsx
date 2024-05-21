@@ -3,7 +3,7 @@ import './Counter.css';
 
 function Counter ({guessCounter}) {
 
-    let [gameCounter, setGameCounter] = useState(1);
+    let [gameCounter, setGameCounter] = useState(2);
 
     return (
         <div className="counter-p">

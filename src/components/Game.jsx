@@ -3,16 +3,16 @@ import './Game.css';
 import Counter from './Counter';
 
 let initialWordList = [
-    { id: 0, value: "banán" },
-    { id: 1, value: "görbe" },
-    { id: 2, value: "étel" },
-    { id: 3, value: "kroasszán" },
-    { id: 4, value: "gyümölcs" }
+    { id: 0, value: "fotó" },
+    { id: 1, value: "idő" },
+    { id: 2, value: "emlék" },
+    { id: 3, value: "nap" },
+    { id: 4, value: "fény" }
 ]
 
 const initialFields = ["", "", "", "", ""];
-const correctList1 = ['banán', 'görbe', 'kroasszán', 'étel', 'gyümölcs'];
-const correctList2 = ['banán', 'gyümölcs', 'étel', 'kroasszán', 'görbe'];
+const correctList1 = ['nap', 'fény', 'fotó', 'emlék', 'idő'];
+const correctList2 = ['nap', 'idő', 'emlék', 'fotó', 'fény'];
 
 function Game() {
 
@@ -71,7 +71,7 @@ function Game() {
             }
 
             else {
-                const c = fields.indexOf("banán");
+                const c = fields.indexOf("nap");
 
                 if (fields[(c + 1) % 5] === correctList1[1] && fields[(c + 2) % 5] === correctList1[2] && fields[(c + 3) % 5] === correctList1[3]) {
                     setRightOrWrong("field-right");
